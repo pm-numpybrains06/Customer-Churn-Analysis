@@ -7,7 +7,7 @@ By combining relational database management (**MySQL**), machine learning (**Pyt
 
 
 
-## 🛠️ System Architecture & Data Pipeline
+## 🛠️ System Architecture & Data Pipeline:-
 
 The data engineering and data science pipeline functions across four key stages:
 1. **📥 Data Ingestion & Storage:** Raw subscriber profiles are structured, cleaned, and stored inside a relational MySQL database.
@@ -17,7 +17,7 @@ The data engineering and data science pipeline functions across four key stages:
 
 
 
-## 🖥️ Dashboard Walkthrough & Business Insights
+## 🖥️ Dashboard Walkthrough & Business Insights:-
 
 ### 📈 Tab 1: Executive Churn Overview
 
@@ -46,7 +46,7 @@ This operational workspace turns predictive machine learning data into direct bu
 
 
 
-## 🧰 Tech Stack & Tools Used
+## 🧰 Tech Stack & Tools Used:
 * **Database:** 🛢️ MySQL (Relational Schema Design, Data Segregation)
 * **Languages:** 🐍 Python 3.x, 📝 SQL, 🔢 DAX
 * **Data Science Libraries:** 🐼 Pandas, 🔢 NumPy, 🤖 Scikit-Learn, 🔌 SQLAlchemy
@@ -54,7 +54,7 @@ This operational workspace turns predictive machine learning data into direct bu
 
 
 
-## 🚀 How to Run This Project Locally
+## 🚀 How to Run This Project Locally:
 
 ### 1. 🛢️ Database Setup
 Execute the SQL script inside your MySQL Instance to establish the base environment:
@@ -149,3 +149,14 @@ SELECT
 FROM active_customer_risk_scores
 GROUP BY Playbook_Action
 ORDER BY total_monthly_revenue_at_risk DESC;
+```
+
+### 2. 🐍 Run the Machine Learning Pipeline
+Install dependencies and execute the Jupyter notebook to calculate active customer risk profiles and refresh the database:
+```bash
+pip install -r requirements.txt
+jupyter notebook notebooks/churn_prediction_model.ipynb
+```
+
+### 3. 📊 Open the BI Dashboard
+Launch Microsoft Power BI Desktop, open `customer_churn.pbix`, click the Refresh button on the Home ribbon to fetch the latest calculations from your MySQL database, and explore the interactive visuals!
