@@ -23,7 +23,7 @@ The data engineering and data science pipeline functions across four key stages:
 
 This page is designed for high-level stakeholders to evaluate macro trends, product infrastructure vulnerabilities, and seasonal revenue loss.
 
-📸 *======= cc1.png=======* 📸
+![Executive Churn Overview](cc1.png)
 
 
 
@@ -37,7 +37,7 @@ This page is designed for high-level stakeholders to evaluate macro trends, prod
 
 This operational workspace turns predictive machine learning data into direct business actions for customer success teams to clear daily.
 
-📸 *======= cc2.png =======* 📸
+![Predictive Retention Playbook](cc2.png)
 
 
 * **🎛️ The Strategy Slicer:** Allows Customer Success Teams to filter active users instantly by their assigned retention workflow button.
