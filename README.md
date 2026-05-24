@@ -82,7 +82,7 @@ CREATE TABLE customer_churn (
     PaperlessBilling VARCHAR(5),
     PaymentMethod VARCHAR(50),
     MonthlyCharges DECIMAL(10, 2),
-    TotalCharges VARCHAR(50), -- Kept as VARCHAR temporarily because raw data has blank spaces for new users
+    TotalCharges VARCHAR(50),
     Churn VARCHAR(5)
 );
 SELECT COUNT(*) FROM customer_churn; 
